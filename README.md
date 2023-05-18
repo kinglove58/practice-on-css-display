@@ -1,2 +1,2 @@
-# practice-on-css-display
-This is my daily coding exercise 
+# practice-on-css
+This is my daily coding practice on css
