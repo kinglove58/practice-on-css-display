@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* //FONT */
+    --FF: 1.8rem;
+    --FF-XL: 4rem;
+
+    /* //COLOR */
+    --DARK-COLOR: gray;
+    --RADIAL-COLOR: red;
+    --COMMON-BLUE: blue;
+
+    /* //GENERAL */
+    --PADDING: 3em;
+    --SHADOWS: 0 6px 5px +1px rgb(160, 88, 88);
+    --SQUARE-BGCOLOR: papayawhip;
+    --SQUARE-SIZE: max(150px, 20vw);
+
+    --BORDER: 2px solid var(--DARK-COLOR);
+}
+
+@media (preferes-color-scheme: dark){
+    :root {
+        --BGCOLOR: rgb(219, 16, 16);
+        --ALT-BGCOLOR: rgb(78, 66, 66);
+        --RADIAL-COLOR: rgb(37, 22, 22);
+        --SQUARE-BGCOLOR: rgb(36, 9, 9);     
+    }
+}
+
+article  {
+    font-size: var(--FF);
+    top: 1rem;
+    text-align: center;
+    background-color: var(--COMMON-BLUE);
+    box-shadow: var(--SHADOWS);
+    margin-bottom: 1rem;
+}
+
+.start {
+    
+}
+
+main {
+    flex-grow: 1;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: min(4vw, 15px);
+}
+.square-light {
+    --SQUARE-BGCOLOR: yellow;
+}
+
+
+.lap {
+    display: grid;
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: var(--BORDER);
+    border-radius: 15px;
+    place-content: center;
+    font-size: var(--FF);
+    box-shadow: var(--SHADOWS);
+  }
+  
+/* footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+    background-color: red;
+    background-image: radial-gradient(whitesmoke, var(--RADIAL-COLOR));
+} */
+

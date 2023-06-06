@@ -47,13 +47,19 @@ nav {
     justify-content: space-evenly;
 }
 
-nav a, 
-nav a:visited {
+nav a:any-link {
+    color: black;
+}
+
+nav:is (a:link, a:visited) {
     color: black;
 }
 
 nav a:hover, nav a:focus {
     color: hsla(0, 0%, 20%, 0.226);
+}
+
+.card 
 }
 
 main {

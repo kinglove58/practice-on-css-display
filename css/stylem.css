@@ -85,6 +85,10 @@ main {
     border-radius: 50%;
 }
 
+.card img:not([alt])     {
+    border-color: red;
+}
+
 .card figure {
     display: flex;
     flex-flow: column nowrap;  
@@ -96,6 +100,18 @@ main {
     font-weight: bolder;
     text-align: center;
     margin: 1rem;
+}
+
+
+
+.card p::after{
+    content: close-quote;
+    font-size: 1.3rem;
+}
+.card figcaption::after {
+
+    content: ' S';
+    display: block;
 }
 
 .nowrap {
@@ -140,8 +156,8 @@ html {
     .card figcaption {
         margin: 0.1rem 0;
     }
-    
-}
+
+   
 
 /* //LARGE */
 @media screen and (min-width: 992px) {
